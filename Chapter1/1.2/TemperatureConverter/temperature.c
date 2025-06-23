@@ -2,8 +2,8 @@
 
 int main() {
     //While Loop Version
-    int fahr, celsius;
-    int lower, upper, step;
+    float fahr, celsius;
+    float lower, upper, step;
 
     lower = 0;
     upper = 300;
@@ -12,16 +12,16 @@ int main() {
     fahr = lower;
     while(fahr <= upper) {
         celsius = (5.0/9.0) * (fahr - 32);
-        printf("%d\t%d\n", fahr, celsius);
+        printf("%3.0f\t%6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
 
     //For Loop Version
-    int fahr, celsius;
-    int upper = 300;
+    // int fahr, celsius;
+    // int upper = 300;
 
-    for(fahr = 0; fahr <= upper; fahr = fahr + 20) {
-        celsius = (5.0/9.0) * (fahr-32);
-        printf("%d\t%d\n", fahr, celsius);
-    }
+    // for(fahr = 0; fahr <= upper; fahr = fahr + 20) {
+    //     celsius = (5.0/9.0) * (fahr-32);
+    //     printf("%d\t%d\n", fahr, celsius);
+    // }
 }
